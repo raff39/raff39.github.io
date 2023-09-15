@@ -7,24 +7,38 @@ body {
 
 header {
 	background-color: #3498db;
-	color: #fff;
 	padding: 0 0;
 	text-align: right;
 	position: fixed;
-	left: 0;
-	right: 0;
+	top: 0;
+	width: 100%;
 	height: 60px;
+	transition: top 0.3s;
 }
 
 nav ul {
 	list-style-type: none;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
-nav li {
-	display: inline;
-	margin-right: 15px;
+nav ul li {
+	display: inline-block;
+	border-radius: 8px;
+	text-align: center;
+	padding: 6px 15px;
+	margin-right: 10px;
+	color: #fff;
+}
+
+nav ul li:hover {
+	box-shadow: 0 0 7px rgba(0, 0, 0, 1);
+	transition: 0.3s;
+}
+
+nav ul li:active {
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+	transition: 0.3s;
 }
 
 nav h2 {
@@ -33,16 +47,16 @@ nav h2 {
 	color: #fff;
 	position: relative;
 	left: 20px;
-	top: -20px;
+	top: -15px;
 	float: left;
 	margin-left: 10px;
 }
 
-nav a {
+nav ul a {
 	text-decoration: none;
-	color: #fff;
 	font-weight: bold;
 	font-size: 13px;
+	color: #fff;
 }
 
 /* Kotak Navigasi */
@@ -78,6 +92,47 @@ nav span span {
 }
 .navigator {
 	display: none;
+}
+
+/* Kotak Menu  */
+
+.popMenu {
+	display: none;
+}
+
+.blokMenu {
+	display: block;
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	right: -170px;
+	text-align: left;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+	transition: 0.3s;
+}
+
+.blokMenu li {
+	display: block;
+	padding: 5px;
+	margin: 3.5px 10px 0;
+}
+.blokMenu li:hover {
+	box-shadow: 0 0 7px rgba(0, 0, 0, 1);
+	transition: 0.3s;
+}
+
+.blokMenu li:active {
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+	transition: 0.3s;
+}
+
+.blokMenu li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 /* Isi */
